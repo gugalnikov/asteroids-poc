@@ -2,7 +2,7 @@ This is a tool which provides data on nearby asteroids using [NASA Asteroids API
 
 # Technology Stack
 
-- Java 17  
+- Java 8
 - Spring Boot  
 - Maven  
 
