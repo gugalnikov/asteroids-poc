@@ -6,9 +6,9 @@ This is a tool which provides data on nearby asteroids using [NASA Asteroids API
 - Spring Boot  
 - Maven  
 
-# Design
+# Design Considerations
 
-Though this is only a PoC, here's also a proposed design for an MVP: 
+Though this is only a PoC, here are some considerations for an MVP: 
 
 # Features
 
