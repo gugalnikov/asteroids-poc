@@ -13,11 +13,6 @@ public class AsteroidController {
         search = new AsteroidSearch();
     }
     
-    @GetMapping("/hello")
-    String helloWorld(){
-        return "Helloworld, Welcome to github cicd action with heroku demo!";
-    }
-
     @RequestMapping(value = "/closestAsteroids.json")
     public @ResponseBody List<Asteroid> searchByDates(@RequestParam(value="startDate") String startDate, @RequestParam(value="endDate") String endDate) {
         return search.searchByDates(startDate,endDate);
