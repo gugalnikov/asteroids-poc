@@ -8,7 +8,12 @@ This is a tool which provides data on nearby asteroids using [NASA Asteroids API
 
 # Design Considerations
 
-Though this is only a PoC, here are some considerations for an MVP: 
+Though this is only a PoC, here are some considerations for an MVP and further development:  
+
+- DB persistence: not necessary at the moment until there is a feature which requires it  
+- API Design: For an MVP the API-first mindset should be embraced from the very beginning, which means designing a good API which can scale and then coding the backend. Furthermore, an API Gateway / micro-gateway should be considered as soon as the development gets more ambitious  
+- Docker generally solves the "it works / doesn't work on my local environment" issue among other benefits. It also promotes a much more streamlined testing / release / deployment strategy. Developers would definitely benefit from this approach    
+- Testing: Automated testing must be implemented towards both front-facing and back-end facing APIs, mocking can be used for early unit testing. Regression and black-box testing should be easy to execute with a streamlined CI / CD strategy. For production use it is also recommended to run performance, volume, stress testing as well as eventually backup/recovery and even canary testing if the system becomes mission critical  
 
 # Features
 
