@@ -57,4 +57,11 @@ Considerations:
 - The NASA API has a hard limit of 7 days for retrieving data from it  
 - This PoC uses the DEMO_KEY to retrieve data, for further use you need to replace this with a [NASA developer key](https://api.nasa.gov/#signUp)   
 
-# Deployment
+# CI / CD
+
+This repo includes GitHub Actions configuration for deploying to Heroku Cloud. This will happen automatically when merging into master.   
+Sample endpoints:    
+
+`https://young-wave-56035.herokuapp.com/closestAsteroids.json?startDate=2016-09-07&endDate=2016-09-10`    
+`https://young-wave-56035.herokuapp.com/largestAsteroid.json?year=2003`. 
+
